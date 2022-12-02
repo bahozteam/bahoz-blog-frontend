@@ -1,0 +1,465 @@
+@font-face {
+    font-family: 'iran-sans';
+    src: url("../fonts/iran_sans/IRANSans_Medium.ttf");
+    font-family: 'iran-sans-num';
+    src: url("../fonts/iran_sans/IRANSans\(FaNum\)_Medium.ttf");
+}
+
+:root {
+    /*?       color        */
+    --mainWhite: #fafafa;
+    /* greenn */
+    --light-green: #DEF2F1;
+    --dim-green: #42B1B8;
+    --main-green: #159F91;
+    /* bluee */
+    --blue: #349EFE;
+    --light-blue: #76faff3b;
+    --icon-color: #17252A;
+    /* color text */
+    --main-text-color: #7C7A89;
+    /*?       font size    */
+    --medium-font-size: 16px;
+    --large-font-size: 20px;
+}
+
+body {
+    background-color: var(--bodyColor);
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: iran-sans, iran-sans-num;
+}
+
+
+/*!------------------------ scroll --------------------------*/
+
+
+/* opera & chrome & safari & Edge */
+
+::-webkit-scrollbar {
+    width: 16px;
+    background-color: var(--mainWhite);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--main-green);
+    border-radius: 16px;
+    border: 4px solid #fff;
+}
+
+
+/* !--------------------------------  header  -------------------- */
+
+
+/* todo this navar dosent have header beacus  has one element  */
+
+nav.navbar-menu {
+    /* width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin: auto;
+    padding: 15px 0;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.logo-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1vw;
+}
+
+.logo-cont>a>img {
+    height: 40px;
+}
+
+.logo-cont>a>i {
+    font-size: 1.5rem;
+    color: var(--icon-color);
+    cursor: pointer;
+}
+
+.logo-cont>a>i:hover {
+    color: var(--dim-green);
+}
+
+ul.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2vw;
+}
+
+ul.menu>li {
+    list-style-type: none;
+    color: var(--menidum-text-color);
+}
+
+ul.menu>li:hover {
+    color: var(--dim-green);
+    cursor: pointer;
+    border-bottom: 2px solid var(--dim-green);
+}
+
+a.accont {
+    padding: 10px 14px;
+    border-radius: 30px;
+    background-color: var(--dim-green);
+    color: white;
+}
+
+
+/*! -----------------------Black nav-------------------------*/
+
+nav.black-nav {
+    background-color: #17252A;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+nav.black-nav>img {
+    position: absolute;
+    height: 30px;
+}
+
+nav.black-nav>img.triangle {
+    top: 15%;
+    right: 30px;
+}
+
+nav.black-nav>img.star {
+    top: 67%;
+    left: 30px;
+}
+
+section.info-cont {
+    height: 70%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.info {
+    width: 40vw;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    color: white;
+}
+
+.mini-title {
+    color: var(--main-green);
+}
+
+.about {
+    /* width: 15vw; */
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.social-media {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.social-media>span {
+    background-color: #d9d9d981;
+    font-size: 1.5rem;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+/* image for telegram */
+
+.social-media>span>img {
+    height: 1.5rem;
+}
+
+.social-media>:hover {
+    background-color: #349EFE;
+    cursor: pointer;
+}
+
+.profile-cont {
+    display: flex;
+    column-gap: 0.2rem;
+    color: white;
+}
+
+.image-profile-cont>img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+
+/* !--------------------------------  body  -------------------- */
+
+.img-bg {
+    width: 100%;
+    height: 40vw;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.img-bg img {
+    height: 40vw;
+    border-radius: 20px;
+    position: absolute;
+    top: -50px;
+}
+
+.title {
+    width: 100%;
+    height: auto;
+}
+
+.text {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.p-text {
+    text-align: right;
+    font-weight: bold;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+    margin: 25px 0;
+}
+
+section.content-cont {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 0.5rem;
+    row-gap: 1rem;
+}
+
+.content {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.content:hover {
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.image-content>img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.profile-cont {
+    display: flex;
+    column-gap: 0.2rem;
+}
+
+.image-profile-cont>img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+
+/* !--------------------------------  footer  -------------------- */
+
+footer {
+    /* height: 350px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: var(--light-blue);
+    margin-top: 30px;
+    padding: 20px 0;
+    row-gap: 1rem;
+}
+
+.menu-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu-footer>li {
+    padding: 2vw;
+}
+
+.menu-footer>li>a {
+    color: #7C7A89;
+}
+
+.menu-footer>li>a:hover {
+    color: #272727;
+}
+
+.logo-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.enamad-icon>img {
+    height: 20vw;
+    max-height: 150px;
+    background: var(--dim-green);
+    border-radius: 5px;
+}
+
+.social-media-footer {
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+}
+
+.social-media-footer>span {
+    background-color: var(--dim-green);
+    color: var(--icon-color);
+    font-size: 1.5rem;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media-footer>span:hover {
+    cursor: pointer;
+}
+
+.bahoz-copyright {
+    width: 95%;
+    max-width: 800px;
+    background: var(--dim-green);
+    color: #0c0c0c;
+    border-radius: 30px;
+}
+
+.bahoz-copyright>p {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+/*?                           medi query                    */
+
+@media (max-width:768px) {
+    /*! header : delete  navbar menu*/
+    nav.navbar-menu {
+        display: none;
+    }
+    /* srcoll : delete scroll */
+     ::-webkit-scrollbar {
+        width: 0px;
+    }
+    /* img : width */
+    .img-bg {
+        height: 60vw;
+    }
+    .img-bg img {
+        width: 90%;
+        height: auto;
+    }
+    /* text:width */
+    .text {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .text>p.p-text {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media (max-width:768px) and (min-width:576px) {
+    /* img : width */
+    .img-bg {
+        height: 60vw;
+    }
+    .img-bg img {
+        width: 80vw;
+        height: auto;
+    }
+}
+
+@media (max-width:576px) {
+    nav.black-nav {
+        display: block;
+        padding: 10px 20px;
+    }
+    nav.black-nav>img {
+        display: none;
+    }
+    section.info-cont {
+        padding: 0;
+        flex-direction: column;
+        width: 90%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        row-gap: 1rem;
+    }
+    section.info-cont>.info {
+        width: 100%;
+    }
+    section.info-cont>.about {
+        font-weight: 10;
+    }
+    section.info-cont>.about>.social-media {
+        display: none;
+    }
+}
