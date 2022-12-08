@@ -673,10 +673,12 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .social-media-footer>span:hover {
-    cursor: pointer;
+    background-color: var(--icon-color);
+    color: var(--light-green);
 }
 
 .bahoz-copyright {
