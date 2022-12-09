@@ -75,7 +75,7 @@ $("span.bars-menu>i").click(function() {
 });
 
 //!------------------------- close menu for mobile -------------------------//
-// close icon & blurry
+// close with click on icon & blurry 
 $("section.blurry , span.close-menu>i").click(close_menu);
 
 function close_menu() {
@@ -89,3 +89,13 @@ function close_menu() {
         displey: "none"
     });
 }
+//!----------------------  scroll left & right short menu ----------//
+let short_menu = document.querySelector(".short-menu")
+$('.scroll-right').click(function(e) {
+    short_menu.scrollBy(80, 0)
+
+});
+$('.scroll-left').click(function(e) {
+    short_menu.scrollBy(-80, 0)
+
+});
