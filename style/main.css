@@ -28,6 +28,7 @@
     /* color text */
     --main-text-color: #7C7A89;
     /*?       font size    */
+    --small-font-size: 12px;
     --medium-font-size: 16px;
     --large-font-size: 20px;
     /* time */
@@ -378,7 +379,10 @@ nav.search-box>img {
 
 .short-menu-cont {
     position: relative;
-    margin: 20px 5px;
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -386,31 +390,36 @@ nav.search-box>img {
 
 .short-menu-cont>button {
     position: absolute;
-    background-color: rgba(150, 150, 150, 0.719);
-    box-shadow: 2px 3px 0.7rem 0 rgba(0, 0, 0, 0.2);
+    background-color: rgba(231, 231, 231, 0.719);
     color: var(--icon-color);
-    top: 20%;
     z-index: 2;
-    font-size: 1.5rem;
-    padding: 5px 10px;
+    height: 100%;
     border: none;
-    border-radius: 5px;
     transition: 0.4s;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.short-menu-cont>button>img {
+    height: 6.5vw;
+}
+
 .short-menu-cont>button:hover {
     cursor: pointer;
-    background-color: rgba(190, 190, 190, 0.719);
 }
 
 .short-menu-cont>button.scroll-right {
+    border-radius: 5px 0 0 5px;
+    background: rgb(255, 253, 255);
+    background: linear-gradient(270deg, rgba(255, 253, 255, 1) 60%, rgba(255, 255, 255, 0.1177347242921013) 100%);
     right: 0;
 }
 
 .short-menu-cont>button.scroll-left {
+    border-radius: 0 5px 5px 0;
+    background: rgb(255, 253, 255);
+    background: linear-gradient(90deg, rgba(255, 253, 255, 1) 60%, rgba(255, 255, 255, 0.1177347242921013) 100%);
     left: 0;
 }
 
@@ -427,10 +436,9 @@ nav.search-box>img {
 }
 
 .short-menu {
-    padding: 0 30px;
     margin: auto;
     position: relative;
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     overflow-x: scroll;
@@ -438,6 +446,7 @@ nav.search-box>img {
 }
 
 .short-menu>ul {
+    padding: 0 40px;
     display: flex;
     list-style-type: none;
     column-gap: 1rem;
@@ -445,10 +454,12 @@ nav.search-box>img {
 
 .short-menu>ul>li {
     width: max-content;
-    padding: 10px 10px;
-    color: var(--main-text-color);
+    padding: 7px 10px;
+    color: black;
+    background-color: rgba(218, 218, 218, 0.37);
     transition: var(--transition-time);
-    border-radius: 20px;
+    border-radius: 100px;
+    font-size: var(--small-font-size);
 }
 
 .short-menu>ul>li:hover {
@@ -458,7 +469,6 @@ nav.search-box>img {
 }
 
 section.main-page-cont {
-    margin-top: 10px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -810,6 +820,12 @@ footer {
         overflow-y: visible !important;
     }
     /* button left & rihgt : delete */
+    .short-menu-cont {
+        margin: 30px 0;
+    }
+    .short-menu>ul>li {
+        font-size: var(--medium-font-size);
+    }
     .short-menu-cont>button {
         display: none;
     }
