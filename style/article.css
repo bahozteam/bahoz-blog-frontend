@@ -265,7 +265,7 @@ h2 {
     margin: 25px 0;
 }
 
-section.content-cont {
+section.box-cont {
     margin: auto;
     width: 80%;
     display: flex;
@@ -275,7 +275,7 @@ section.content-cont {
     row-gap: 1rem;
 }
 
-.content {
+.box {
     width: 300px;
     display: flex;
     flex-direction: column;
@@ -284,11 +284,11 @@ section.content-cont {
     border-radius: 15px;
 }
 
-.content:hover {
+.box:hover {
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
 }
 
-.image-content>img {
+.image-box>img {
     width: 100%;
     border-radius: 15px;
 }

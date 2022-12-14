@@ -568,7 +568,7 @@ button.btn-read-more:hover {
 
 /* todo                       end suggestion */
 
-section.content-cont {
+section.box-cont {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -577,7 +577,7 @@ section.content-cont {
     row-gap: 1rem;
 }
 
-.content {
+.box {
     width: 300px;
     display: flex;
     flex-direction: column;
@@ -588,12 +588,12 @@ section.content-cont {
     transition-duration: var(--transition-time);
 }
 
-.content:hover {
+.box:hover {
     box-shadow: 2px 2px 3rem 0 rgba(117, 117, 117, 0.2);
     transform: scale(1.01);
 }
 
-.image-content>img {
+.image-box>img {
     width: 100%;
     border-radius: 15px;
 }

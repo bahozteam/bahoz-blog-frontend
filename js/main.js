@@ -1,9 +1,9 @@
 for (let i = 0; i < 5; i++) {
     let element = `
 
-    <div class="content">
+    <div class="box">
 
-    <div class="image-content">
+    <div class="image-box">
         <img src="assets/images/content.jpg" alt="">
     </div>
 
@@ -39,7 +39,7 @@ for (let i = 0; i < 5; i++) {
 </div>
 
 `;
-    document.querySelector(".content-cont").innerHTML += element
+    document.querySelector(".box-cont").innerHTML += element
 
 }
 
