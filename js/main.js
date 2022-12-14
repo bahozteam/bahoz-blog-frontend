@@ -91,6 +91,21 @@ function close_menu() {
         displey: "none"
     });
 }
+// grouping 
+
+$("div.grouping>i").click(function() {
+    $(".down-menu>ul").toggleClass("show-ul");
+
+    if ($(".down-menu>ul").hasClass("show-ul")) {
+        $(this).css("transform", "rotate(-90deg)");
+    } else {
+        $(this).css("transform", "rotate(0deg)");
+
+    }
+
+});
+
+
 //!----------------------  scroll left & right short menu ----------//
 let short_menu = document.querySelector(".short-menu")
 $('.scroll-right').click(function(e) {
