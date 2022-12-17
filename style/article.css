@@ -288,10 +288,12 @@ section.box-cont {
     padding: 10px;
     border-radius: 15px;
     transition: var(--transition-time);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
 }
 
 .box:hover {
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 3rem 0 rgba(117, 117, 117, 0.2);
+    transform: scale(1.01);
 }
 
 .image-box>img {
