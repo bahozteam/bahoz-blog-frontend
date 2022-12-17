@@ -21,6 +21,8 @@
     /*?       font size    */
     --medium-font-size: 16px;
     --large-font-size: 20px;
+    /* time */
+    --transition-time: 0.4s;
 }
 
 body {
@@ -94,6 +96,7 @@ nav.navbar-menu {
     font-size: 1.5rem;
     color: var(--icon-color);
     cursor: pointer;
+    transition: var(--transition-time);
 }
 
 .logo-cont>a>i:hover {
@@ -110,12 +113,12 @@ ul.menu {
 ul.menu>li {
     list-style-type: none;
     color: var(--menidum-text-color);
+    transition: var(--transition-time);
 }
 
 ul.menu>li:hover {
     color: var(--dim-green);
     cursor: pointer;
-    border-bottom: 2px solid var(--dim-green);
 }
 
 a.accont {
@@ -200,6 +203,7 @@ section.info-cont {
     align-items: center;
     justify-content: center;
     color: white;
+    transition: var(--transition-time);
 }
 
 
@@ -207,6 +211,7 @@ section.info-cont {
 
 .social-media>span>img {
     height: 1.5rem;
+    transition: var(--transition-time);
 }
 
 .social-media>:hover {
@@ -282,6 +287,7 @@ section.box-cont {
     row-gap: 1rem;
     padding: 10px;
     border-radius: 15px;
+    transition: var(--transition-time);
 }
 
 .box:hover {
@@ -331,6 +337,7 @@ footer {
 
 .menu-footer>li>a {
     color: #7C7A89;
+    transition: var(--transition-time);
 }
 
 .menu-footer>li>a:hover {
@@ -371,6 +378,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: var(--transition-time);
 }
 
 .social-media-footer>span:hover {
