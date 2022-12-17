@@ -6,6 +6,7 @@ for (let i = 0; i < 5; i++) {
     <div class="image-box">
         <img src="assets/images/content.jpg" alt="">
     </div>
+    <div class="content-box">
 
     <div class="mini-title-cont">
         <p class="mini-title">برنامه نویسی </p>
@@ -34,6 +35,7 @@ for (let i = 0; i < 5; i++) {
         </div>
 
 
+    </div>
     </div>
 
 </div>
