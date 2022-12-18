@@ -386,7 +386,7 @@ nav.search-box>img {
 
 .search {
     background-color: white;
-    box-shadow: 1px 5px 10px #aaa;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     padding: 15px 40px;
@@ -394,6 +394,11 @@ nav.search-box>img {
     width: 50%;
     column-gap: 0.7rem;
     position: absolute;
+    transition: var(--transition-time);
+}
+
+.search:hover {
+    box-shadow: 5px 5px 1rem 0 rgba(0, 0, 0, 0.2);
 }
 
 .search>i {
