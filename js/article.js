@@ -1,11 +1,12 @@
 for (let i = 0; i < 5; i++) {
     let element = `
 
-    <div class="content">
+    <div class="box">
 
-    <div class="image-content">
-        <img src="../assets/images/content.jpg" alt="">
+    <div class="image-box">
+        <img src="assets/images/content.jpg" alt="">
     </div>
+    <div class="content-box">
 
     <div class="mini-title-cont">
         <p class="mini-title">برنامه نویسی </p>
@@ -24,7 +25,7 @@ for (let i = 0; i < 5; i++) {
     <div class="profile-cont">
 
         <div class="image-profile-cont">
-            <img src="../assets/images/profile 1.png" alt="profile">
+            <img src="assets/images/profile 1.png" alt="profile">
         </div>
 
         <div class="left-profile-cont">
@@ -35,10 +36,11 @@ for (let i = 0; i < 5; i++) {
 
 
     </div>
+    </div>
 
 </div>
 
 `;
-    document.querySelector(".content-cont").innerHTML += element
+    document.querySelector(".box-cont").innerHTML += element
 
 }

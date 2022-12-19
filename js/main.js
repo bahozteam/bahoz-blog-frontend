@@ -1,11 +1,12 @@
 for (let i = 0; i < 5; i++) {
     let element = `
 
-    <div class="content">
+    <div class="box">
 
-    <div class="image-content">
+    <div class="image-box">
         <img src="assets/images/content.jpg" alt="">
     </div>
+    <div class="content-box">
 
     <div class="mini-title-cont">
         <p class="mini-title">برنامه نویسی </p>
@@ -35,11 +36,12 @@ for (let i = 0; i < 5; i++) {
 
 
     </div>
+    </div>
 
 </div>
 
 `;
-    document.querySelector(".content-cont").innerHTML += element
+    document.querySelector(".box-cont").innerHTML += element
 
 }
 
@@ -75,7 +77,7 @@ $("span.bars-menu>i").click(function() {
 });
 
 //!------------------------- close menu for mobile -------------------------//
-// close icon & blurry
+// close with click on icon & blurry 
 $("section.blurry , span.close-menu>i").click(close_menu);
 
 function close_menu() {
@@ -89,3 +91,28 @@ function close_menu() {
         displey: "none"
     });
 }
+// grouping 
+
+$("div.grouping>i").click(function() {
+    $(".down-menu>ul").toggleClass("show-ul");
+
+    if ($(".down-menu>ul").hasClass("show-ul")) {
+        $(this).css("transform", "rotate(-90deg)");
+    } else {
+        $(this).css("transform", "rotate(0deg)");
+
+    }
+
+});
+
+
+//!----------------------  scroll left & right short menu ----------//
+let short_menu = document.querySelector(".short-menu")
+$('.scroll-right').click(function(e) {
+    short_menu.scrollBy(80, 0)
+
+});
+$('.scroll-left').click(function(e) {
+    short_menu.scrollBy(-80, 0)
+
+});
