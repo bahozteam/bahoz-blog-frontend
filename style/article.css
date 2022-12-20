@@ -219,7 +219,7 @@ section.info-cont {
     cursor: pointer;
 }
 
-.profile-cont {
+section.info-cont>.about>.profile-cont {
     display: flex;
     column-gap: 0.2rem;
     color: white;
@@ -270,6 +270,8 @@ h2 {
     margin: 25px 0;
 }
 
+
+/* 
 section.box-cont {
     margin: auto;
     width: 80%;
@@ -315,7 +317,7 @@ section.box-cont {
 .image-profile-cont>img {
     width: 50px;
     border-radius: 50%;
-}
+} */
 
 
 /* !--------------------------------  footer  -------------------- */
@@ -479,7 +481,7 @@ footer {
         display: none;
     }
     /*! responsive boxes for moboile size */
-    .box-cont {
+    /* .box-cont {
         width: 100%;
     }
     .box {
@@ -503,5 +505,5 @@ footer {
     }
     .content-box>.normal-text {
         display: none;
-    }
+    } */
 }
