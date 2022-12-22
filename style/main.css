@@ -139,7 +139,7 @@ menu.menu-mobile {
     right: -410px;
     transition: 0.5s;
     top: 0;
-    width: 50vw;
+    width: 70vw;
     height: 200%;
     padding: 5px 10px;
     background-color: var(--dim-green);
