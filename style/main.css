@@ -375,6 +375,7 @@ ul.menu>li:hover {
     align-items: center;
     justify-content: flex-start;
     gap: 5px;
+    transition: .5s ease;
 }
 nav.search-box {
     width: 100%;
