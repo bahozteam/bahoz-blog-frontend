@@ -358,7 +358,7 @@ ul.menu>li:hover {
     background-color: var(--hover-green);
 }
 .login:active{
-    background: var(--light-blue);
+    background: var(--active-color);
 }
 .register {
     color: var(--mainWhite);
