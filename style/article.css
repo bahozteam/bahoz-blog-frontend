@@ -130,8 +130,13 @@ a.accont {
     background-color: var(--dim-green);
     color: white;
 }
-
-
+a.accont:hover{
+    background: var(--hover-green);
+    transition: .5s ease;
+}
+a.accont:active{
+    background-color: var(--blue);
+}
 /*! -----------------------Black nav-------------------------*/
 
 nav.black-nav {
