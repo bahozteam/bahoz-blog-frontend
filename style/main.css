@@ -356,7 +356,7 @@ ul.menu>li:hover {
     color: white;
     background-color: var(--hover-green);
 }
-.login:hover 
+
 .register {
     color: var(--mainWhite);
     padding: 10px 15px;
