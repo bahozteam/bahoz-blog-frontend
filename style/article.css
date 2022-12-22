@@ -12,10 +12,13 @@
     --light-green: #DEF2F1;
     --dim-green: #42B1B8;
     --main-green: #159F91;
+    --hover-green: #5bc3b8;
     /* bluee */
     --blue: #349EFE;
     --light-blue: #76faff3b;
     --icon-color: #17252A;
+    --active-color: #72cbff;
+
     /* color text */
     --main-text-color: #7C7A89;
     /*?       font size    */
@@ -342,7 +345,7 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     background: var(--light-blue);
-    /* margin-top: 20px; */
+    margin-top: 20px;
     padding: 20px 0;
     row-gap: 1rem;
 }
