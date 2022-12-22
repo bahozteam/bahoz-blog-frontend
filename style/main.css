@@ -25,6 +25,7 @@
     --light-blue: #76faff3b;
     --icon-color: #17252A;
     --login-btn-color: #c4f3f1;
+    --active-color: #72cbff;
     /* redd */
     --main-red: rgb(241, 58, 58);
     /* color text */
@@ -356,7 +357,9 @@ ul.menu>li:hover {
     color: white;
     background-color: var(--hover-green);
 }
-
+.login:active{
+    background: var(--light-blue);
+}
 .register {
     color: var(--mainWhite);
     padding: 10px 15px;
@@ -369,13 +372,18 @@ ul.menu>li:hover {
     color: white;
     background-color: var(--hover-green);
 }
+.register:active{
+    /* transform: translateX(20px); */
+    transition: 200ms ease;
+    background: var(--blue);
+}
 .login,
 .register{
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 5px;
-    transition: .5s ease;
+    /* transition: .5s ease; */
 }
 nav.search-box {
     width: 100%;
