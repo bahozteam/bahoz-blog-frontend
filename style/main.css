@@ -19,10 +19,12 @@
     --light-green: #DEF2F1;
     --dim-green: #42B1B8;
     --main-green: #159F91;
+    --hover-green: #84fff3;
     /* bluee */
     --blue: #349EFE;
     --light-blue: #76faff3b;
     --icon-color: #17252A;
+    --login-btn-color: #c4f3f1;
     /* redd */
     --main-red: rgb(241, 58, 58);
     /* color text */
@@ -334,36 +336,46 @@ ul.menu>li:hover {
 }
 
 .login-register-cont {
-    border: 3px solid var(--dim-green);
+    /* border: 3px solid var(--dim-green); */
     border-radius: 30px;
     display: flex;
     justify-content: space-between;
+    background: var(--login-btn-color);
+
 }
 
 .login {
     border-radius: 20px;
-    padding: 10px 15px;
-    color: var(--dim-green);
+    padding: 10px 9px;
     transition: var(--transition-time);
+    color: var(--dim-green);
+    width: 200%;
 }
 
 .login:hover {
     color: white;
-    background-color: var(--dim-green);
+    background-color: var(--hover-green);
 }
 
 .register {
-    color: var(--dim-green);
+    color: var(--mainWhite);
     padding: 10px 15px;
     border-radius: 20px;
     transition: var(--transition-time);
+    background: var(--dim-green);
 }
 
 .register:hover {
     color: white;
-    background-color: var(--dim-green);
+    background-color: var(--main-green);
 }
-
+.login,
+.register{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
 nav.search-box {
     width: 100%;
     display: flex;
