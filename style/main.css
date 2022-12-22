@@ -19,7 +19,7 @@
     --light-green: #DEF2F1;
     --dim-green: #42B1B8;
     --main-green: #159F91;
-    --hover-green: #84fff3;
+    --hover-green: #5bc3b8;
     /* bluee */
     --blue: #349EFE;
     --light-blue: #76faff3b;
@@ -356,7 +356,7 @@ ul.menu>li:hover {
     color: white;
     background-color: var(--hover-green);
 }
-
+.login:hover 
 .register {
     color: var(--mainWhite);
     padding: 10px 15px;
@@ -367,7 +367,7 @@ ul.menu>li:hover {
 
 .register:hover {
     color: white;
-    background-color: var(--main-green);
+    background-color: var(--hover-green);
 }
 .login,
 .register{
