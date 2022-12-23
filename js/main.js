@@ -1,3 +1,28 @@
+/* search bar codes */
+const searchDiv = document.querySelector(".search-menu");
+const mobileSearchInput = document.querySelector("#mobileSearchInput");
+
+
+function direction(element) {
+    let char = new RegExp("/[ آابپتثجچحخدذرزژسشصضطظعغفقکگلمنوهیئ\s]+$/");
+    let firstChar = new RegExp("/^[\u0600-\u06FF\s]+$/");
+    let secondChar = new RegExp("^/[a-zA-Z]/");
+    if(firstChar.test(element.value) === true){
+        searchDiv.classList.add("persian-direction");
+        searchDiv.classList.remove("english-direction");
+        console.log("persian");
+    } else if(secondChar.test(element.value) === true ){
+        searchDiv.classList.add("english-direction");
+        searchDiv.classList.remove("persian-direction");
+        console.log("english");
+       
+    }
+}
+
+mobileSearchInput.addEventListener("keyup",(e)=>{
+    direction(e);
+});
+
 for (let i = 0; i < 5; i++) {
     let element = `
 
