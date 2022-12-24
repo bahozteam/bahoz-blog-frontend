@@ -70,9 +70,7 @@ for (let i = 0; i < 5; i++) {
 
 }
 
-
-
-
+ 
 //! ------------- read more ---------------------------//
 
 $(".btn-read-more").click(function(e) {

@@ -227,7 +227,7 @@ section.info-cont {
     cursor: pointer;
 }
 
-.profile-cont {
+section.info-cont>.about>.profile-cont {
     display: flex;
     column-gap: 0.2rem;
     color: white;
@@ -500,32 +500,6 @@ footer {
         font-weight: 10;
     }
     section.info-cont>.about>.social-media {
-        display: none;
-    }
-    /*! responsive boxes for moboile size */
-    .box-cont {
-        width: 100%;
-    }
-    .box {
-        width: 100%;
-        box-shadow: none;
-        padding: 0;
-        flex-direction: row;
-        column-gap: 15px;
-        align-items: center;
-    }
-    .box:hover {
-        padding: 0 10px 0 0;
-    }
-    .image-box>img {
-        height: 25vw;
-        width: auto;
-        border-radius: 15px;
-    }
-    .content-box {
-        row-gap: 1vw;
-    }
-    .content-box>.normal-text {
         display: none;
     }
 }
