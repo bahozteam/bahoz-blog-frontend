@@ -136,7 +136,7 @@ section.blurry {
 menu.menu-mobile {
     z-index: 3;
     position: absolute;
-    right: -410px;
+    right: -100%;
     transition: 0.5s;
     top: 0;
     width: 70vw;
@@ -274,8 +274,13 @@ menu>.down-menu>ul>li:hover {
     cursor: pointer;
     color: var(--icon-color);
 }
-
-
+ /* ? js styles for searchbox ? */
+ .persian-direction{
+    direction: rtl;
+ }
+ .english-direction{
+    direction: ltr;
+ }
 /* !--------------------------------  header Desktop   -------------------- */
 
 header.header-desktop {
