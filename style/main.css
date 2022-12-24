@@ -136,7 +136,7 @@ section.blurry {
 menu.menu-mobile {
     z-index: 3;
     position: absolute;
-    right: -410px;
+    right: -100%;
     transition: 0.5s;
     top: 0;
     width: 70vw;
