@@ -3,7 +3,7 @@
 .custom-scroll {
     position: sticky;
     top: -10px;
-    z-index: 10;
+    z-index: 2;
     width: 100%;
     display: flex;
     align-items: center;
