@@ -217,6 +217,9 @@ menu>.center-menu>ul>li {
     padding: 8px;
     border-radius: 1rem;
     transition: var(--transition-time);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 menu>.center-menu>ul>li:hover {
@@ -245,6 +248,7 @@ menu>.down-menu>ul {
 }
 
 menu>.down-menu>ul>li {
+    text-align: center;
     padding: 8px;
     border-radius: 1rem;
     transition: var(--transition-time);
@@ -274,13 +278,19 @@ menu>.down-menu>ul>li:hover {
     cursor: pointer;
     color: var(--icon-color);
 }
- /* ? js styles for searchbox ? */
- .persian-direction{
+
+
+/* ? js styles for searchbox ? */
+
+.persian-direction {
     direction: rtl;
- }
- .english-direction{
+}
+
+.english-direction {
     direction: ltr;
- }
+}
+
+
 /* !--------------------------------  header Desktop   -------------------- */
 
 header.header-desktop {
@@ -347,7 +357,6 @@ ul.menu>li:hover {
     display: flex;
     justify-content: space-between;
     background: var(--login-btn-color);
-
 }
 
 .login {
@@ -362,9 +371,11 @@ ul.menu>li:hover {
     color: white;
     background-color: var(--hover-green);
 }
-.login:active{
+
+.login:active {
     background: var(--active-color);
 }
+
 .register {
     color: var(--mainWhite);
     padding: 10px 15px;
@@ -377,19 +388,22 @@ ul.menu>li:hover {
     color: white;
     background-color: var(--hover-green);
 }
-.register:active{
+
+.register:active {
     /* transform: translateX(20px); */
     transition: 200ms ease;
     background: var(--blue);
 }
+
 .login,
-.register{
+.register {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 5px;
     /* transition: .5s ease; */
 }
+
 nav.search-box {
     width: 100%;
     display: flex;
@@ -684,14 +698,15 @@ ul.page-number>li.selected {
 
 /* !--------------------------------  footer  -------------------- */
 
-.div{
+.div {
     width: 100%;
     height: 50px;
     position: relative;
     overflow: hidden;
     margin-top: 100px;
 }
-.div::before{
+
+.div::before {
     content: "";
     width: 100%;
     height: 56px;
@@ -699,8 +714,8 @@ ul.page-number>li.selected {
     border-radius: 100%;
     position: absolute;
     box-shadow: 0px 30px 0px 50px #76faff3b;
-    
 }
+
 footer {
     display: flex;
     flex-direction: column;
