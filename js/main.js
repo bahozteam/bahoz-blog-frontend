@@ -87,19 +87,3 @@ $("input").keyup(function(e) {
         }
     }
 });
-
-//!----------------------  custom scroll ------------------------//
-$(window).resize(move_custom_scroll);
-$(window).scroll(move_custom_scroll);
-
-function move_custom_scroll() {
-    let custom_scroll = document.querySelector(".custom-scroll");
-    let circle = document.querySelector(".circle");
-    let scroll_top = window.scrollY;
-    let document_height = document.body.clientHeight;
-    let inner_height = window.innerHeight;
-    let persent = scroll_top / (document_height - inner_height);
-    persent = Math.round(persent * 100);
-    let left = (persent / 100) * (custom_scroll.clientWidth - 20);
-    circle.style.left = `${left+2}px`;
-}

@@ -76,49 +76,6 @@ a {
 }
 
 
-/*!------------------------ custom scroll --------------------------*/
-
-.custom-scroll {
-    position: sticky;
-    top: -10px;
-    z-index: 10;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 10px;
-}
-
-.custom-scroll>.line {
-    direction: ltr;
-    width: 100%;
-    height: 5px;
-    background-color: #5c5c5c;
-    position: relative;
-}
-
-.custom-scroll>.line>.circle {
-    position: absolute;
-    top: -6px;
-    left: 2px;
-    border-radius: 50%;
-    width: 17px;
-    height: 17px;
-    border: 5px solid var(--hover-green);
-}
-
-
-/* .custom-scroll>.line>.circle::before {
-    content: "";
-    position: absolute;
-    left: -7px;
-    top: 1px;
-    background-color: #4b4b4b;
-    height: 5px;
-    width: 10px;
-} */
-
-
 /* !--------------------------------  header mobile   -------------------- */
 
 header.header-mobile {
