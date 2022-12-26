@@ -50,6 +50,14 @@ a {
     text-decoration: none;
 }
 
+.ltr {
+    direction: ltr;
+}
+
+.rtl {
+    direction: rtl;
+}
+
 
 /*!------------------------ scroll --------------------------*/
 
@@ -190,7 +198,7 @@ span.close-menu>i {
 .top-menu>.search-menu>input {
     color: var(--mainWhite);
     background-color: #37949A;
-    width: 90%;
+    width: 95%;
     outline: none;
     border: none;
 }
