@@ -7,19 +7,19 @@ function direction(element) {
     let char = new RegExp("/[ آابپتثجچحخدذرزژسشصضطظعغفقکگلمنوهیئ\s]+$/");
     let firstChar = new RegExp("/^[\u0600-\u06FF\s]+$/");
     let secondChar = new RegExp("^/[a-zA-Z]/");
-    if(firstChar.test(element.value) === true){
+    if (firstChar.test(element.value) === true) {
         searchDiv.classList.add("persian-direction");
         searchDiv.classList.remove("english-direction");
         console.log("persian");
-    } else if(secondChar.test(element.value) === true ){
+    } else if (secondChar.test(element.value) === true) {
         searchDiv.classList.add("english-direction");
         searchDiv.classList.remove("persian-direction");
         console.log("english");
-       
+
     }
 }
 
-mobileSearchInput.addEventListener("keyup",(e)=>{
+mobileSearchInput.addEventListener("keyup", (e) => {
     direction(e);
 });
 
@@ -70,7 +70,7 @@ for (let i = 0; i < 5; i++) {
 
 }
 
- 
+
 //! ------------- read more ---------------------------//
 
 $(".btn-read-more").click(function(e) {
@@ -110,7 +110,7 @@ function close_menu() {
     $("section.blurry").css("display", "none");
 
     $(".menu-mobile").css({
-        right: "-410px",
+        right: "-100%",
         displey: "none"
     });
 }
