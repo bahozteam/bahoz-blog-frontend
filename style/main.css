@@ -191,7 +191,7 @@ span.close-menu>i {
 }
 
 .top-menu>.search-menu>i {
-    color: var(--icon-color);
+    color: var(--mainWhite);
     cursor: pointer;
 }
 
@@ -437,7 +437,7 @@ nav.search-box>img {
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
-    padding: 15px 40px;
+    padding: 15px 40px 15px 20px;
     border-radius: 15px;
     width: 50%;
     column-gap: 0.7rem;
@@ -455,6 +455,7 @@ nav.search-box>img {
 }
 
 .search>input {
+    width: 100%;
     border: none;
     outline: none;
 }
