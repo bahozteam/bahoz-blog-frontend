@@ -278,13 +278,18 @@ menu>.down-menu>ul>li:hover {
     align-items: center;
 }
 
+.down-menu>div.grouping:hover {
+    cursor: pointer;
+    background-color: #37949A;
+    box-shadow: 0 0 2rem 0 rgba(250, 250, 250, 0.2);
+}
+
 .down-menu>div.grouping>i {
     transition: var(--transition-time);
 }
 
 .down-menu>div.grouping>i:hover {
     cursor: pointer;
-    color: var(--icon-color);
 }
 
 

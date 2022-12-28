@@ -41,15 +41,15 @@ function close_menu() {
         displey: "none"
     });
 }
-// grouping 
+//! grouping 
 
-$("div.grouping>i").click(function() {
+$("div.grouping").click(function() {
     $(".down-menu>ul").toggleClass("show-ul");
 
     if ($(".down-menu>ul").hasClass("show-ul")) {
-        $(this).css("transform", "rotate(-90deg)");
+        $("div.grouping>i").css("transform", "rotate(-90deg)");
     } else {
-        $(this).css("transform", "rotate(0deg)");
+        $("div.grouping>i").css("transform", "rotate(0deg)");
 
     }
 
