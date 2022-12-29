@@ -1,3 +1,46 @@
+/*!------------------------ custom scroll --------------------------*/
+
+.custom-scroll {
+    position: sticky;
+    top: -10px;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.custom-scroll>.line {
+    direction: ltr;
+    width: 100%;
+    height: 5px;
+    background-color: #5c5c5c;
+    position: relative;
+}
+
+.custom-scroll>.line>.circle {
+    position: absolute;
+    top: -6px;
+    left: 2px;
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    border: 5px solid var(--hover-green);
+}
+
+
+/* .custom-scroll>.line>.circle::before {
+    content: "";
+    position: absolute;
+    left: -7px;
+    top: 1px;
+    background-color: #4b4b4b;
+    height: 5px;
+    width: 10px;
+} */
+
+
 /* !--------------------------------  boxes  -------------------- */
 
 section.box-cont {
@@ -51,13 +94,32 @@ section.box-cont {
 
 /* !--------------------------------  footer  -------------------- */
 
+.deep-footer {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 40px;
+    background-color: #76faff3b;
+}
+
+.deep-footer::before {
+    background-color: white;
+    box-shadow: 0px 0px 12px 2px #c9c9c9;
+    content: "";
+    width: 100%;
+    height: 56px;
+    bottom: 50%;
+    border-radius: 100%;
+    position: absolute;
+}
+
 footer {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     background: var(--light-blue);
-    margin-top: 20px;
     padding: 20px 0;
     row-gap: 1rem;
 }
