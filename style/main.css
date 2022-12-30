@@ -717,7 +717,7 @@ ul.page-number>li.selected {
         text-align: center;
     }
     .image-suggestion-cont>img {
-        width: 100%;
+        width: 80%;
         height: auto;
     }
     /* read more : center */
@@ -737,6 +737,9 @@ ul.page-number>li.selected {
     /* .main-page {
         width: 100%;
     } */
+    .image-suggestion-cont>img {
+        width: 100%;
+    }
 }
 
 @media (min-width:769px) {
