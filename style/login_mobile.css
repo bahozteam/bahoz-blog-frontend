@@ -40,7 +40,7 @@
 }
 
 body {
-    background-color: var(--bodyColor);
+    background-color: #877EFF;
 }
 
 li {
@@ -49,4 +49,90 @@ li {
 
 a {
     text-decoration: none;
+}
+
+
+/*! ------------------------ body  -------------------------------*/
+
+section.login-register-cont {
+    margin-top: 300px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.login-register-cont>div {
+    position: absolute;
+    width: 50%;
+    height: 500px;
+    min-width: 300px;
+    max-width: 400px;
+}
+
+.login-title,
+.register-title {
+    display: flex;
+    align-items: center;
+    padding: 20px 15px;
+}
+
+.login-title,
+.register-title>p {
+    color: rgb(173, 173, 173);
+    font-weight: bold;
+    font-size: 30px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    transition: var(--transition-time);
+}
+
+
+/* register */
+
+.register {
+    background-color: #E6E6FE;
+    border-radius: 50px 290px 50px 50px;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.register-title {
+    direction: ltr;
+}
+
+
+/* login */
+
+.login {
+    background-color: #ffffff;
+    border-radius: 290px 50px 50px 50px;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+/*? selected */
+
+section.login-register-cont>div.selected {
+    box-shadow: 1px 13px 2rem rgba(54, 54, 54, 0.664);
+    z-index: 1;
+}
+
+.selected>:first-child>p {
+    color: var(--icon-color);
+}
+
+.selected>:first-child>p::after {
+    width: 100%;
+    content: "";
+    float: left;
+    background: #5D54F9;
+    height: 6px;
+    border-radius: 3px;
 }
