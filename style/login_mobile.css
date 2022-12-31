@@ -39,8 +39,10 @@
     --transition-time: 0.4s;
 }
 
-body {
-    background-color: #877EFF;
+html {
+    background: rgb(1, 255, 189);
+    background: linear-gradient(127deg, rgba(1, 255, 189, 1) 8%, rgba(21, 159, 145, 1) 100%);
+    height: 100%;
 }
 
 li {
@@ -94,7 +96,7 @@ section.login-register-cont>div {
 /* register */
 
 .register {
-    background-color: #E6E6FE;
+    background-color: var(--light-green);
     border-radius: 50px 290px 50px 50px;
     z-index: 0;
     align-items: flex-end;
@@ -130,7 +132,7 @@ section.login-register-cont>div.selected {
     width: 100%;
     content: "";
     float: left;
-    background: #5D54F9;
+    background: var(--main-green);
     height: 6px;
     border-radius: 3px;
 }
