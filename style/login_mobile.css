@@ -107,14 +107,14 @@ section.login-register-cont>div {
     direction: ltr;
 }
 
-.register>span {
+.register>span.form {
     width: 100%;
-    /* background-color: rgba(255, 0, 0, 0.411); */
     border-radius: 50px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
+    row-gap: 3rem;
 }
 
 .register>span>form {
@@ -157,10 +157,10 @@ span.submit-cont>a {
 }
 
 input[type=submit] {
-    width: 120px;
+    width: 130px;
     border: none;
     background-color: var(--main-green);
-    padding: 5px;
+    padding: 8px;
     border-radius: 2rem;
     color: white;
     font-size: 1.2rem;
