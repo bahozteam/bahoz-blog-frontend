@@ -142,6 +142,36 @@ form.form-register>div>input {
     background-color: rgba(255, 255, 255, 0);
 }
 
+span.submit-cont {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span.submit-cont>a {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+input[type=submit] {
+    width: 120px;
+    border: none;
+    background-color: var(--main-green);
+    padding: 5px;
+    border-radius: 2rem;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 1px 13px 2rem rgba(54, 54, 54, 0.664);
+}
+
+input[type=submit]:hover {
+    background-color: var(--dark-green);
+}
+
 
 /* login */
 
