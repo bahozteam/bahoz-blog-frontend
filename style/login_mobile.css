@@ -95,6 +95,10 @@ section.login-register-cont>div {
     transition: var(--transition-time);
 }
 
+input[type=checkbox] {
+    accent-color: var(--main-green);
+}
+
 
 /* register */
 
@@ -114,13 +118,14 @@ section.login-register-cont>div {
     width: 100%;
     border-radius: 50px;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     row-gap: 3rem;
 }
 
 .register>span>form {
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -129,6 +134,7 @@ section.login-register-cont>div {
 }
 
 form.form-register>div {
+    width: 100%;
     display: flex;
     column-gap: 1rem;
     border-bottom: 2px solid var(--dark-green);
