@@ -138,12 +138,13 @@ form.form-register>div {
     width: 100%;
     display: flex;
     column-gap: 1rem;
-    border-bottom: 2px solid var(--dark-green);
+    border-bottom: 2px solid var(--main-green);
     transition: var(--transition-time);
 }
 
 form.form-register>div:hover {
     transform: scale(1.05);
+    border-bottom: 2px solid var(--dark-green);
 }
 
 form.form-register>div:hover label {
