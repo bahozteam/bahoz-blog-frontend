@@ -139,11 +139,21 @@ form.form-register>div {
     display: flex;
     column-gap: 1rem;
     border-bottom: 2px solid var(--dark-green);
+    transition: var(--transition-time);
+}
+
+form.form-register>div:hover {
+    transform: scale(1.05);
+}
+
+form.form-register>div:hover label {
+    color: var(--dark-green);
 }
 
 form.form-register>div>label {
     color: var(--main-green);
     font-size: 1.2rem;
+    transition: var(--transition-time);
 }
 
 form.form-register>div>input {
