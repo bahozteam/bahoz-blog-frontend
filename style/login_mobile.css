@@ -236,6 +236,15 @@ input[type=submit]:hover {
     right: 5px;
 }
 
+form.form-login>a {
+    color: var(--main-green);
+    transition: var(--transition-time);
+}
+
+form.form-login>a:hover {
+    color: var(--dark-green);
+}
+
 
 /*? selected */
 
