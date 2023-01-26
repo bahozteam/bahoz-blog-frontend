@@ -91,6 +91,13 @@ function check_login(e) {
 function set_error(eleman) {
     $(eleman.previousElementSibling).css("color", "#f34747");
     $(eleman.parentElement).css("borderBottom", "2px solid #f34747");
+    //animation
+    $(eleman.parentElement).addClass("error");
+    setTimeout(() => {
+        $(eleman.parentElement).removeClass("error");
+    }, 500);
+
+
 }
 
 function remove_error(eleman) {
