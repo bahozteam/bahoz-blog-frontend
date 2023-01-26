@@ -39,34 +39,61 @@ function check_register(e) {
 
     //name
     if (name.value.length < 3) {
-        console.log("name is so less");
+        set_error(name)
+    } else {
+        remove_error(name)
     }
     //email
     let length_tex = email.value.length - 10;
     let Gmail = email.value.substring(length_tex, email.value.length);
-    if (Gmail == "@gmail.com" || Gmail == "@yahoo.com" && email.value.length > 13) {
-        console.log("email ok");
+    if (Gmail != "@gmail.com" || Gmail != "@yahoo.com" && email.value.length < 13) {
+        set_error(email)
     } else {
-        console.log('email not true');
+        remove_error(email)
     }
     // maching pass
-    if (re_pass.value == pass.value) {
-        console.log("pass ok");
+    if (!pass.value) {
+        set_error(pass)
     } else {
-        console.log("pass not maching");
+        remove_error(pass)
+    }
+
+    if (re_pass.value != pass.value) {
+        set_error(re_pass)
+    } else {
+        remove_error(re_pass)
     }
 
 }
 
 function check_login(e) {
     let email = $("#email-login")[0];
+    let pass = $("#pass-login")[0];
 
     //email
     let length_tex = email.value.length - 10;
     let Gmail = email.value.substring(length_tex, email.value.length);
-    if (Gmail == "@gmail.com" || Gmail == "@yahoo.com" && email.value.length > 13) {
-        console.log("email ok");
+    if (Gmail != "@gmail.com" || Gmail != "@yahoo.com" && email.value.length < 13) {
+        set_error(email)
     } else {
-        console.log('email not true');
+        remove_error(email)
     }
+
+    if (!pass.value) {
+        set_error(pass)
+    } else {
+        remove_error(pass)
+    }
+}
+
+
+
+function set_error(eleman) {
+    $(eleman.previousElementSibling).css("color", "#f34747");
+    $(eleman.parentElement).css("borderBottom", "2px solid #f34747");
+}
+
+function remove_error(eleman) {
+    $(eleman.previousElementSibling).css("color", "#159F91");
+    $(eleman.parentElement).css("borderBottom", "2px solid #159F91");
 }
