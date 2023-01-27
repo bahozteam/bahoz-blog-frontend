@@ -91,3 +91,7 @@
    inset -2px -2px 4px var(--white);
 
 }
+.form__input:focus{
+    box-shadow: inset 4px 4px 4px var(--neu-2),
+        inset -4px -4px 4px var(--white);
+}
