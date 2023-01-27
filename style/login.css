@@ -9,3 +9,9 @@
     --purple: #4B70E2;
     --transition: 1.25s;
 }
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
