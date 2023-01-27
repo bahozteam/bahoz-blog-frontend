@@ -134,3 +134,31 @@
     border: none;
     outline: none;
 }
+.a-container{
+    width: 1000px;
+    z-index: 100;
+    /* left: calc(100% - 600px ); */
+    padding-left: 50%;
+}
+.b-container{
+    left: calc(100% - 600px );
+    z-index: 0;
+}    
+.switch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 400px;
+    padding: 50px;
+    z-index: 200;
+    transition: var(--transition);
+    background-color: var(--neu-1);
+    overflow: hidden;
+    box-shadow:
+      4px 4px 10px var(--neu-2),
+      -4px -4px 10px var(--white);
+}
