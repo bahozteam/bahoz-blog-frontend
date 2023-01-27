@@ -28,3 +28,17 @@
     background-color: var(--neu-1);
     color: var(--gray);
 }
+ /* main */
+ .main{
+    position: relative;
+    width: 1000px;
+    min-width: 1000px;
+    min-height: 600px;
+    height: 600px;
+    padding: 25px;
+    background-color: var(--neu-1);
+    box-shadow: 10px 10px 10px var(--neu-2),
+     -10px -10px 10px var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+}
