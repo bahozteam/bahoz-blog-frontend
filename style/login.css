@@ -202,3 +202,41 @@
     transform: scale(.985);
     transition: .25s;
 }
+.switch__button:active,
+.switch__button:focus{
+    box-shadow:
+  2px 2px 6px var(--neu-2),
+  -2px -2px 6px var(--white);
+    transform: scale(.97);
+    transition: .25s;
+}
+    /**/
+.is-txr{
+    /* left: calc(100% - 400px ); */
+    left: 0;
+    transition: var(--transition);
+    transform-origin: left;
+}
+.is-txl{
+    left: 0;
+    transition: var(--transition);
+    transform-origin: right;
+}
+.is-z200{
+    z-index: 200;
+    transition: var(--transition);
+}
+.is-hidden{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: var(--transition);
+}
+.is-gx{
+    animation: is-gx var(--transition);
+}
+@keyframes is-gx {
+    0%, 10%, 100%{ width: 400px; }
+    30%, 50%{ width: 500px;}
+}
+    
