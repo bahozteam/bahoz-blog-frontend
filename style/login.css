@@ -42,3 +42,15 @@
     border-radius: 12px;
     overflow: hidden;
 }
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 600px;
+    height: 100%;
+    padding: 25px;
+    background-color: var(--neu-1);
+    transition: var(--transition);
+}
