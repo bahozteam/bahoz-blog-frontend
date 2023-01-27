@@ -69,3 +69,8 @@
     opacity: .5;
     transition: .15s;
 }
+.form__icon:hover{
+    opacity: 1;
+    transition: .15s;
+    cursor: pointer;
+}
