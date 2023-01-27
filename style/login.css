@@ -95,3 +95,26 @@
     box-shadow: inset 4px 4px 4px var(--neu-2),
         inset -4px -4px 4px var(--white);
 }
+.form__span{
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+.form__link{
+    color: var(--black);
+    font-size: 15px;
+    margin-top: 25px;
+    border-bottom: 1px solid var(--gray);
+    line-height: 2;
+}
+.title{
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 3;
+    color: var(--black);
+}
+.description{
+    font-size: 14px;
+    letter-spacing: .25px;
+    text-align: center;
+    line-height: 1.6;
+}
