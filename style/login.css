@@ -74,3 +74,20 @@
     transition: .15s;
     cursor: pointer;
 }
+.form__input{
+    width: 350px;
+    height: 40px;
+    margin: 4px 0;
+    padding-left: 25px;
+    font-size: 13px;
+    letter-spacing: .15px;
+    border: none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--neu-1);
+    transition: .25s ease;
+    border-radius: 8px;
+    box-shadow: inset 2px 2px 4px var(--neu-2),
+   inset -2px -2px 4px var(--white);
+
+}
