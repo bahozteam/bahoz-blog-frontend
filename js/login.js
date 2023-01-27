@@ -36,3 +36,8 @@ let mainF = (e) => {
     for (var i = 0; i < switchBtn.length; i++)
         switchBtn[i].addEventListener("click", changeForm)
 }
+
+//* event listeners 
+
+window.addEventListener("load", mainF);
+
