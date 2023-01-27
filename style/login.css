@@ -162,3 +162,43 @@
       4px 4px 10px var(--neu-2),
       -4px -4px 10px var(--white);
 }
+.switch__circle{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: var(--neu-1);
+    box-shadow: inset 8px 8px 12px var(--neu-2),
+       inset -8px -8px 12px var(--white);
+    bottom: -60%;
+    left: -60%;
+    transition: var(--transition);
+}
+.switch__circle--t{
+    top: -30%;
+    left: 60%;
+    width: 300px;
+    height: 300px;
+}
+    
+.switch__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    width: 400px;
+    padding: 50px 55px;
+    transition: var(--transition);
+   
+}
+    
+.switch__button{
+    cursor: pointer;
+}
+.switch__button:hover{
+    box-shadow: 6px 6px 10px var(--neu-2),
+    -6px -6px 10px var(--white);
+    transform: scale(.985);
+    transition: .25s;
+}
