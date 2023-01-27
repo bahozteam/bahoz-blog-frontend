@@ -1,0 +1,11 @@
+/*  root colors */
+:root{
+    --bg: #EDF2F0;
+    --neu-1: #ecf0f3;
+    --neu-2: #d1d9e6;
+    --white: #f9f9f9;
+    --gray: #a0a5a8;
+    --black: #181818;
+    --purple: #4B70E2;
+    --transition: 1.25s;
+}
