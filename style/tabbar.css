@@ -55,4 +55,7 @@
         width: 90%;
         height: 70px;
     }
+    .circle:hover{
+        color: #000;
+    }
 }
