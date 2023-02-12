@@ -112,7 +112,7 @@
     line-height: 2;
 }
 .title{
-    font-size: 34px;
+    font-size: 2em;
     font-weight: 700;
     line-height: 3;
     color: var(--black);
