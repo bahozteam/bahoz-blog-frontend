@@ -12,7 +12,7 @@
     --white: #f9f9f9;
     --gray: #a0a5a8;
     --black: #181818;
-    --purple: #4B70E2;
+    --main-green: #159F91;
     --transition: 1.25s;
 }
 *, *::after, *::before {
@@ -131,7 +131,7 @@
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 1.15px;
-    background-color: var(--purple);
+    background-color: var(--main-green);
     color: var(--white);
     box-shadow:
       8px 8px 16px var(--neu-2),
