@@ -192,7 +192,7 @@
     align-items: center;
     flex-direction: column;
     position: absolute;
-    width: 400px;
+    width: 100%;
     padding: 50px 55px;
     transition: var(--transition);
    
