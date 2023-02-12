@@ -193,7 +193,7 @@
     flex-direction: column;
     position: absolute;
     width: 100%;
-    padding: 50px 55px;
+    padding: 6%;
     transition: var(--transition);
    
 }
