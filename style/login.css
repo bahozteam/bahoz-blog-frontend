@@ -81,7 +81,7 @@
     cursor: pointer;
 }
 .form__input{
-    width: 350px;
+    width: 80%;
     height: 40px;
     margin: 4px 0;
     padding-right: 25px;
