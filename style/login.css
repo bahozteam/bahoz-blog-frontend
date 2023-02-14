@@ -37,8 +37,8 @@
  /* main */
  .main{
     position: relative;
-    width: 1000px;
-    min-width: 1000px;
+    width: 75vw;
+    min-width: 40vw;
     min-height: 600px;
     height: 600px;
     padding: 25px;
