@@ -12,7 +12,7 @@
     --white: #f9f9f9;
     --gray: #a0a5a8;
     --black: #181818;
-    --purple: #4B70E2;
+    --main-green: #159F91;
     --transition: 1.25s;
 }
 *, *::after, *::before {
@@ -37,8 +37,8 @@
  /* main */
  .main{
     position: relative;
-    width: 75vw;
-    min-width: 40vw;
+    max-width: 75vw;
+    width: 70vw;
     min-height: 600px;
     height: 600px;
     padding: 25px;
@@ -81,7 +81,7 @@
     cursor: pointer;
 }
 .form__input{
-    width: 350px;
+    width: 80%;
     height: 40px;
     margin: 4px 0;
     padding-right: 25px;
@@ -112,7 +112,7 @@
     line-height: 2;
 }
 .title{
-    font-size: 34px;
+    font-size: 2em;
     font-weight: 700;
     line-height: 3;
     color: var(--black);
@@ -131,7 +131,7 @@
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 1.15px;
-    background-color: var(--purple);
+    background-color: var(--main-green);
     color: var(--white);
     box-shadow:
       8px 8px 16px var(--neu-2),
@@ -140,7 +140,7 @@
     outline: none;
 }
 .a-container{
-    width: 1000px;
+    width: 100%;
     z-index: 100;
     /* left: calc(100% - 600px ); */
     padding-left: 50%;
@@ -157,7 +157,7 @@
     top: 0;
     left: 0;
     height: 100%;
-    width: 400px;
+    width: 50%;
     padding: 50px;
     z-index: 200;
     transition: var(--transition);
@@ -192,8 +192,8 @@
     align-items: center;
     flex-direction: column;
     position: absolute;
-    width: 400px;
-    padding: 50px 55px;
+    width: 100%;
+    padding: 6%;
     transition: var(--transition);
    
 }
