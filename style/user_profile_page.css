@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'iran-sans';
+    src: url("../assets/fonts/IRANSans_Medium.ttf");
+    font-family: 'iran-sans-num';
+    src: url("../assets/fonts/IRANSans\(FaNum\)_Medium.ttf");
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: iran-sans, iran-sans-num;
+}
+:root {
+    /*?       color        */
+    --mainWhite: #fafafa;
+    /* greenn */
+    --light-green: #DEF2F1;
+    --dim-green: #42B1B8;
+    --main-green: #159F91;
+    --hover-green: #5bc3b8;
+    /* bluee */
+    --blue: #349EFE;
+    --light-blue: #76faff3b;
+    --icon-color: #17252A;
+    --active-color: #72cbff;
+    /* color text */
+    --main-text-color: #7C7A89;
+    /*?       font size    */
+    --medium-font-size: 16px;
+    --large-font-size: 20px;
+    /* time */
+    --transition-time: 0.4s;
+}
+.menu{
+    width: 100%;
+    height: 70px;
+    background-color: #76faff3b;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 1rem 0 #c6d3d2;
+}
+.logo{
+    width: 250px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    height: 50px;
+}
+.icons{
+    width: 400px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2vh;
+}
+.icons i{
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--icon-color);
+}
+.icons i:hover{
+    color: var(--main-green);
+}
+.email{
+    width: 180px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.email a{
+    font-size: 14px;
+    cursor: pointer;
+    color: var(--icon-color);
+}
+a{
+    text-decoration: none;
+}
+
+.main-container{
+    border: 1px solid red;
+    width: 100%;
+    height: auto;
+}
+.text-back{
+    border: 1px solid red;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 45px;
+}
+.text-back a{
+    font-size: 10px;
+    color: gray;
+}
+.container{
+    border: 1px solid red;
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+.profile-container{
+    border: 1px solid red;
+    width: 40%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.information-container{
+    border: 1px solid red;
+    width: 60%;
+    height: 500px; 
+}
+.profile-card{
+    border: 1px solid red;
+    width: 85%;
+    height: 500px;
+    background-color: var(--icon-color); 
+}
+.profile-circle{
+    border: 1px solid red;
+    width: 100%;
+    height: 200px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-circle img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
+.line{
+    border: 1px solid red;
+    width: 100%;
+    height: 100px;
+}
