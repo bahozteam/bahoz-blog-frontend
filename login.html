@@ -3,6 +3,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/logo/web-icon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- <link rel="stylesheet" href="style/login_mobile.css"> -->
+    <!-- remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style/login.css">
     <title>صفحه ورود</title>
 </head>
@@ -266,6 +273,114 @@
         </form>
        </div>
     </div>
+    <section class="mobile-login-page">
+        <section class="title-cont">
+
+
+
+            <div id="login-title">
+                <h2>سلام رفیق</h2>
+                <p>به خونه خوش اومدی ، اگه عضو هستی وارد شو</p>
+            </div>
+    
+            <div id="register-title">
+                <h2>خوش اومدی رفیق !</h2>
+                <p>مشخصات شخصی خود رو با دقت وارد کن و به خانواده کوچیک ما بپیوند</p>
+            </div>
+    
+    
+        </section>
+    
+        <section class="login-register-cont">
+    
+            <div class="register selected">
+    
+                <div class="register-title">
+                    <p class="">ثبت نام</p>
+                </div>
+    
+                <span class="form-cont">
+                    <form action="" class="form-register">
+    
+                        <!--todo    inputs    -->
+                        <div class="input-cont">
+                            <label for=""><i class="ri-user-6-line"></i></label>
+                            <input id="name-register" type="text" placeholder="نام">
+                        </div>
+    
+                        <div class="input-cont">
+                            <label for=""><i class="ri-mail-open-line"></i></label>
+                            <input id="email-register" type="email" placeholder="ایمیل">
+                        </div>
+    
+                        <div class="input-cont">
+                            <label for=""><i class="ri-lock-password-line"></i></label>
+                            <input id="pass-register" type="password" placeholder="رمز">
+                        </div>
+    
+                        <div class="input-cont">
+                            <label for=""><i class="ri-lock-password-line"></i></label>
+                            <input id="re-pass-register" type="password" placeholder="تکرار رمز">
+                        </div>
+                        <div class="remember-cont">
+                            <small>منو بخاطر بسپار </small>
+                            <input type="checkbox" name="remember" id="remember">
+                        </div>
+                        
+                    </form>
+    
+                    <span class="submit-cont">
+                        <a href="#">
+                            <input id="submit-register" type="submit" value="ثبت نام">
+                        </a>
+                    </span>
+    
+                </span>
+    
+    
+            </div>
+    
+            <div class="login ">
+    
+                <div class="login-title">
+                    <p class="title">ورود</p>
+                </div>
+    
+    
+    
+                <span class="form-cont">
+                    <form action="" class="form-login">
+    
+                        <!--todo    inputs    -->
+    
+                        <div class="input-cont">
+                            <label for=""><i class="ri-mail-open-line"></i></label>
+                            <input id="email-login" type="email" placeholder="ایمیل">
+                        </div>
+    
+                        <div class="input-cont">
+                            <label for=""><i class="ri-lock-password-line"></i></label>
+                            <input id="pass-login" type="password" placeholder="رمز">
+                        </div>
+    
+                        
+                        <a href="#"><small>رمزتو فراموش کردی؟</small></a>
+                    </form>
+    
+                    <span class="submit-cont">
+                        <a href="#">
+                            <input id="submit-login" type="submit" value="ورود">
+                        </a>
+                    </span>
+    
+                </span>
+    
+    
+            </div>
+    
+        </section>
+    
+    </section>
     <script src="js/login.js"></script>
 </body>
 </html>
