@@ -244,4 +244,7 @@
     0%, 10%, 100%{ width: 400px; }
     30%, 50%{ width: 500px;}
 }
+
+@media (max-width: 768px) {
     
+}
