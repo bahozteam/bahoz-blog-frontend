@@ -7,6 +7,7 @@ let switchBtn = document.querySelectorAll(".switch-btn");
 let aContainer = document.querySelector("#a-container");
 let bContainer = document.querySelector("#b-container");
 let loginSection = document.querySelector(".login-section");
+let registerSection = document.querySelector(".register-section");
 let allButtons = document.querySelectorAll(".submit");
 
 // ! functions
@@ -30,7 +31,7 @@ let changeForm = (e) => {
     // bContainer.classList.toggle("is-txl");
     // bContainer.classList.toggle("is-z200");
     loginSection.classList.toggle("is-hidden");
-    
+
 }
 
 let mainF = (e) => {
