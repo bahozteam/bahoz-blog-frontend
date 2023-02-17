@@ -82,12 +82,10 @@ a{
 }
 
 .main-container{
-    border: 1px solid red;
     width: 100%;
     height: auto;
 }
 .text-back{
-    border: 1px solid red;
     width: 100%;
     height: 40px;
     display: flex;
@@ -100,45 +98,128 @@ a{
     color: gray;
 }
 .container{
-    border: 1px solid red;
     width: 100%;
     height: 500px;
     display: flex;
 }
 .profile-container{
-    border: 1px solid red;
-    width: 40%;
+    width: 35%;
     height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .information-container{
-    border: 1px solid red;
-    width: 60%;
+    border-right: 1px solid rgb(150, 147, 147);
+    width: 65%;
     height: 500px; 
 }
 .profile-card{
-    border: 1px solid red;
     width: 85%;
-    height: 500px;
-    background-color: var(--icon-color); 
+    height: 500px; 
 }
 .profile-circle{
-    border: 1px solid red;
     width: 100%;
     height: 200px; 
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.line-profile{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    padding-right: 20px;
+}
+.line-profile:hover{
+    background-color: var(--active-color);
+    border-radius: 15px;
+    transition: var(--transition-time);
+}
 .profile-circle img{
     width: 150px;
     height: 150px;
     border-radius: 100px;
 }
-.line{
-    border: 1px solid red;
+.line-name-user{
     width: 100%;
-    height: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+}
+.line-name-user h5{
+    color: gray;
+}
+.boxs{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.box{
+    width: 220px;
+    height: 170px;
+    margin: 10px 20px;
+    border-radius: 7px;
+    box-shadow: 0 0 1rem 0 #b1aeae;
+}
+.line-box-icon{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line-box-icon div{
+    width: 90%;
+    height: 80px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line-box-icon div i{
+    font-size: 40px;
+    color: rgb(218, 216, 216);
+}
+.line-box-title{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line-box-title p{
+    font-size: 15px;
+}
+.line-box-digit{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line-box-digit p{
+    font-size: 20px;
+}
+.yellow{
+    background-color: goldenrod;
+}
+.green{
+    background-color: green;
+}
+.red{
+    background-color: rgb(133, 7, 7);
+}
+.blue{
+    background-color: #159F91;
+}
+.magenta{
+    background-color: rgb(100, 31, 212);
 }
