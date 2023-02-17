@@ -123,8 +123,8 @@ section.login-register-cont>div {
     color: rgb(173, 173, 173);
     font-weight: bold;
     font-size: 30px;
-    -moz-user-select: none;
-    -webkit-user-select: none;
+    --moz-user-select: none;
+    --webkit-user-select: none;
     transition: var(--transition-time);
 }
 
