@@ -244,7 +244,15 @@
     0%, 10%, 100%{ width: 400px; }
     30%, 50%{ width: 500px;}
 }
+.mobile-login-page{
+    display: none;
+}
 
 @media (max-width: 768px) {
-    
+    .mobile-login-page{
+        display: block;
+    }
+    .main{
+        display: none;
+    }
 }
