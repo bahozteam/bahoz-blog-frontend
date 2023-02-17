@@ -31,7 +31,7 @@ let changeForm = (e) => {
     // bContainer.classList.toggle("is-txl");
     // bContainer.classList.toggle("is-z200");
     loginSection.classList.toggle("is-hidden");
-
+    registerSection.classList.toggle("is-hidden");
 }
 
 let mainF = (e) => {
