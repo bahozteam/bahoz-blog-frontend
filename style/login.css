@@ -216,14 +216,11 @@ body {
     transition: var(--transition);
 }
 
-.switch__button {
-    cursor: pointer;
-}
-
-.switch__button:hover {
+button.submit:hover {
     box-shadow: 6px 6px 10px var(--neu-2), -6px -6px 10px var(--white);
     transform: scale(.985);
     transition: .25s;
+    cursor: pointer;
 }
 
 .switch__button:active,
